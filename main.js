@@ -51,7 +51,7 @@ addLoadEvent(function() {
     };
     const eheaders = {
         'Content-Type' : 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlVzZXJuYW1lIiwibmJmIjoxNjM3NjMxNTMyLCJleHAiOjE2Mzc2MzMzMzIsImlhdCI6MTYzNzYzMTUzMiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo0OTIyMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDkyMjAifQ.CHq_dhEwqJUN-gOgbAAjqIiaEbudBu60-fiaXpKXtOs'                  
+        'Authorization': 'Bearer ' + token                  
       }
 
     axios.defaults.headers = eheaders;
