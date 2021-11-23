@@ -27,7 +27,7 @@ addLoadEvent(function() {
         Password:"123456"
     
     };
-    axios.post('http://tataservices.azurewebsites.net/api/login/authenticate', data, {
+    axios.post('https://tataservices.azurewebsites.net/api/login/authenticate', data, {
           headers : headers
       })
 	  .then(function (response) {
@@ -56,7 +56,7 @@ addLoadEvent(function() {
 
     axios.defaults.headers = eheaders;
     
-    axios.post('http://tataservices.azurewebsites.net/api/customers/repitepalabra' ,  null,
+    axios.post('https://tataservices.azurewebsites.net/api/customers/repitepalabra' ,  null,
         { params: data}        
       ).then(function (response) {
           console.log(response);
